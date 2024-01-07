@@ -326,6 +326,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: auto;
 }
 
 .article-container{
@@ -376,7 +377,9 @@ article .icon{
 }
 
 /* CONTACT */
-
+#contact {
+    position: relative;
+}
 #contact {
     display: flex;
     justify-content: center;
