@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<title>Graph Plotter</title> 
+	<script src= 
+		"https://cdn.plot.ly/plotly-latest.min.js"> 
+	</script> 
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"> 
+	</script> 
+
+	<style> 
+		body { 
+			font-family: Arial, sans-serif; 
+			margin: 0; 
+			padding: 0; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			height: 100vh; 
+			background-color: #f0f0f0; 
+		} 
+
+		.container { 
+			text-align: center; 
+			width: 80%; 
+			max-width: 800px; 
+			background-color: #fff; 
+			padding: 20px; 
+			border-radius: 10px; 
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+			margin-top: 50px; 
+		} 
+
+		header { 
+			background-color: #3498db; 
+			color: white; 
+			padding: 20px 0; 
+			border-top-left-radius: 10px; 
+			border-top-right-radius: 10px; 
+		} 
+
+		h1 { 
+			margin: 0; 
+		} 
+
+		.input-container { 
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			margin-top: 20px; 
+		} 
+
+		input { 
+			padding: 10px; 
+			margin: 0 10px; 
+			width: 60%; 
+			border: 1px solid #ccc; 
+			border-radius: 5px; 
+		} 
+
+		button { 
+			padding: 10px 20px; 
+			background-color: #e74c3c; 
+			color: white; 
+			border: none; 
+			cursor: pointer; 
+			border-radius: 5px; 
+			transition: background-color 0.3s; 
+		} 
+
+		button:hover { 
+			background-color: #c0392b; 
+
+		} 
+
+		.main-content { 
+			display: flex; 
+			flex-direction: column; 
+			align-items: center; 
+			margin-top: 50px; 
+
+			padding-top: 50px; 
+
+		} 
+
+		.graph { 
+			width: 100%; 
+			height: 400px; 
+			margin: 20px 0; 
+			/* Adjust margin if needed */ 
+			border: 1px solid #ccc; 
+			border-radius: 10px; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class="container"> 
+		<header> 
+			<h1>Graph Plotter</h1> 
+			<div class="input-container"> 
+				<input type="text" id="functionInput"
+					placeholder="Enter a function, e.g. y = x^2"> 
+				<button onclick="plotGraph()"> 
+					Plot 
+				</button> 
+			</div> 
+		</header> 
+		<div class="main-content"> 
+			<div class="graph" id="graph"></div> 
+		</div> 
+	</div> 
+
+	<script> 
+		function plotGraph() { 
+			const graph = document.getElementById('graph'); 
+			graph.innerHTML = ''; 
+
+
+			const functionInput4 = 
+				'0.00620262446745462*x*x - 0.0904256252327048*x + 2.05138555902935'; 
+			const expr4 = math.parse(functionInput4).compile(); 
+			const functionInput3 = 
+				'-0.000235813524296025*x*x*x + 0.032364683465572*x*x - 0.529332414754694*x + 5.45236678973705'; 
+			const expr3 = math.parse(functionInput3).compile(); 
+
+			const xValues = math.range(10, 40, 0.1)._data; 
+			const yValues4 = xValues.map(x => expr4.evaluate({ x })); 
+			const yValues3 = xValues.map(x => expr3.evaluate({ x })); 
+
+			const trace4 = { 
+				x: xValues, 
+				y: yValues4, 
+				type: 'scatter', 
+				mode: 'lines', 
+			};
+
+			const trace3 = { 
+				x: xValues, 
+				y: yValues3, 
+				type: 'scatter', 
+				mode: 'lines', 
+			}; 
+
+			const layout = { 
+				xaxis: { title: 'X-axis' }, 
+				yaxis: { title: 'Y-axis' }, 
+			}; 
+
+			Plotly.newPlot(graph, [trace4, trace3], layout); 
+		} 
+	</script> 
+</body> 
+
+</html>

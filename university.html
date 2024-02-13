@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
+    <link rel="stylesheet" href="style_university.css">
+    <link rel="stylesheet" href="mediaqueries_university.css">
+</head> 
 <body>
    <nav id="desktop-nav">
     <a class="b" href="index.html">  
@@ -14,10 +14,10 @@
     </a>
     <div>
         <ul class="nav-links">
-            <li><a href="#about">Final Thesis</a></li>
-            <li><a href="#experience">Orbital Mechanics</a></li>
-            <li><a href="#projects">Airplane Design</a></li>
-            <li><a href="#contact">Instrument Box</a></li>
+            <li><a href="#Thesis">Thesis</a></li>
+            <li><a href="#OrbitalM">Orbital M.</a></li>
+            <li><a href="#AirplaneD">Airplane D.</a></li>
+            <li><a href="#InstrumentB">Instrument B.</a></li>
         </ul>
     </div>
    </nav>
@@ -30,258 +30,188 @@
         <span></span>
         </div>
         <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#Thesis" onclick="toggleMenu()">Thesis</a></li>
+            <li><a href="#OrbitalM" onclick="toggleMenu()">Orbital M.</a></li>
+            <li><a href="#AirplaneD" onclick="toggleMenu()">Airplane D.</a></li>
+            <li><a href="#InstrumentB" onclick="toggleMenu()">Instrument B.</a></li>
         </div>
     </div>
    </nav>
-   <section id="profile">
-    <div class="section__pic-container">
-        <img src="./assets/EoFC_1.png" alt="Adam El Ghaib profile picture" class="pimg">
-    </div>
-    <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Adam El Ghaib</h1>
-        <p class="section__text__p2">Aerospace engineer</p>
-        <div class="btn-container">
-            <button class="btn btn-color-2"onclick="window.open('./assets/AdamElGhaib_CV.pdf')">
-                Download CV
-            </button>
-            <button class="btn btn-color-1"onclick="location.href='./#contact'">
-                Contact info
-            </button>
-        </div>
-        <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="My linkedin profile"
-            class="icon"onclick="location.href='https://www.linkedin.com/in/adam-el-ghaib-879b021b7/'">
-            <img src="./assets/github.png" alt="My github profile"
-            class="icon"onclick="location.href='https://github.com'">
-        </div>
-    </div>
 
-   </section>
-   <section id="about">
-    <p class="section__text__p1">Get to know more</p>
-    <h1 class="title"> About me</h1>
+   <h1 class="title"> University Projects</h1>
+   <section class="section2" id="profile">
     <div class="section-container">
         <div class="section__pic-container">
-            <img src="./assets/WhatsApp Image 2023-07-02 at 2.45.19 PM.jpeg" 
+            <img src="./assets/Foto_orla.jpg" 
             alt="Profile pictute"
-            class="about-pic">
+            class="about-pic2">
         </div>
+            <div class="text-container">
+                <p>
+                    I studied a B.Sc degree in Aerospace Vehicles at the Polytechnic University of Catalonia and a M.Sc degree in Space Science and Technology with an specialization in Space Robotics at Luleå Technical University. University allowed me to recive a solid and multidisciplinary training in the different aspects engineering, but with emphasis on the
+                    aspects specifically related to aeronautics and space vehicles. Being challenged constantly allowed me to develop a critical-thinking mindset. The following projects are some of the highlighted ones I carried out during my education.
+                </p>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
+        onclick="location.href='./university.html#Thesis'">
+   </section>
+
+   <section id="Thesis">
+    <h3 class="title2">Final Degree Thesis</h3>
+    <p class="section__text__p1">Exploration of Force Control in UAV Actuators</p>
+   
+    <div class="section-container2">
         <div class="about-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <img src="./assets/Logo_UPC.svg.png" 
-                    alt="Experience icon"
-                    class="icon email-icon" onclick="location.href='https://www.upc.edu/ca/graus/enginyeria-en-vehicles-aeroespacials-terrassa-eseiaat'">
-                    <h5>Polytechnic University of Catalonia</h5>
-                    <p>B.Sc<br>Aeroespace Engineering</p>
+                <div class="details-container2">
+                    <h3>Field Oriented Control</h3>
+                    <div class="section__vid-container">
+                        <video class="video1" loop onmouseover="playVideo1()" onmouseout="pauseVideo1()">
+                            <source src="./assets/TFG_Video.MOV">
+                        </video>
+                     </div>
                 </div>
-                <div class="details-container">
-                    <img src="./assets/1200px-LTU_logo.svg.png" 
-                    alt="Education icon"
-                    class="icon email-icon" onclick="location.href='https://www.ltu.se/edu/program/TMRRA/TMRRA-Rymdvetenskap-och-rymdteknik-master-1.76948?l=en'">
-                    <h5>Luleå University of Technology</h5>
-                    <p>M.Sc <br>Space Science and Technology</p>
+                <div class="details-container2">
+                    <h3>Spring Elongation</h3>
+                   <div class="section__vid-container">
+                        <video class="video2" loop onmouseover="playVideo2()" onmouseout="pauseVideo2()">
+                            <source src="./assets/TFG_Video2.MOV">
+                        </video>
+                    </div>
                 </div>
             </div>
+            <div class="text-container3">
+                <p>
+                    For my final degree thesis,
+                    ways of maintaining a certain amount of force produced by a canard wing constant in front
+                    of, external perturbations in the wind speed, and angle of attack over time were explored.
+                    That is to say, reproducing a "stick-free" flight in UAV.
+                </p>
+            </div>
+            <div class="btn-container">
+                <button class="btn2 btn-color-2"onclick="window.open('./assets/Adam_ElGhaib_TGZG24.pdf')">
+                    Download Full Report
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
+    onclick="location.href='./university.html#OrbitalM'"/>
+   </section>
+
+
+   <section class="section3" id="OrbitalM">
+   
+    <h1 class="title">Orbital Mechanics</h1> 
+    <div class="section-container4">
+        <div class="about-details-container">
+            <div class="about-containers2">
+                <div class="details-container">
+                        <div class="text-container2">
+                            <p>
+                             I see myself as someone curious always willing to learn something new. A deep passion for space exploration drove me to study aerospace engineering. In my career, I have enjoyed acquiring a theoretical basis of how things work from a
+                             more fundamental point of view, but what I have enjoyed the most is applying that
+                             knowledge to build tangible objects that can solve real problems. Being capable of
+                             communicating with the environment using software and hardware feels like a superpower to me and
+                             it fascinates me.
+                            </p>
+                        </div>
+                     </div>
+                <div class="details-container">
+                    <div class="section__pic-container2">
+                        <img src="./assets/Parabolic_orbit.gif" 
+                        alt="Profile pictute"
+                        class="about-pic3">
+                   </div>
+                </div>
+            </div>
+            </div>
+         </div>
+
+    <div class="btn-container2">
+        <button class="btn2 btn-color-2"onclick="window.open('./assets/Aerobatic_plane.pdf')">
+            Download Full Report
+        </button>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
+    onclick="location.href='./university.html#AirplaneD'"/>
+   </section>
+
+   <section id="AirplaneD">
+   
+    <h1 class="title">Electric Airplane Design</h1> 
+    <p class="section__text__p1">Voltic</p>
+    <div class="section-container3">
+        <div class="section__pic-container2">
+            <img src="./assets/Poster_1.png" 
+            alt="Profile pictute"
+            class="about-pic3">
+        </div>
+        <div class="about-details-container">
             <div class="text-container">
                 <p>
                  I see myself as someone curious always willing to learn something new. A deep passion for space exploration drove me to study aerospace engineering. In my career, I have enjoyed acquiring a theoretical basis of how things work from a
                  more fundamental point of view, but what I have enjoyed the most is applying that
                  knowledge to build tangible objects that can solve real problems. Being capable of
-                 communicating with the environment using software and hardware is something that
-                 fascinates me.
+                 communicating with the environment using software and hardware feels like a superpower to me and
+                 it fascinates me.
                 </p>
             </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
-        onclick="location.href='./#experience'">
-   </section>
-   <section id="experience">
-    <p class="section__text__p1">Explore my</p>
-    <h1 class="title">Knwoledge</h1>
-    <div class="experience-details-container">
-        <div class="about-containers k">
-            <div class="details-container">
-                <h2 class="experience-sub-title">Software</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets/matlab-svgrepo-com.svg" alt="Experience icon" class="icon">
-                        <div>
-                            <h3>MatLab</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/c.svg" alt="Experience icon" class="icon">
-                        <div>
-                            <h3>C++</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/solidworks-icon-24.jpg" alt="Experience icon" class="icon sw-icon">
-                        <div>
-                            <h3>SolidWorks</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/labview.png" alt="Experience icon" class="icon">
-                        <div>
-                            <h3>LabView</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/Arduino_Logo.svg.png" alt="Experience icon" class="icon arduino-icon">
-                        <div>
-                            <h3>ArduinoIDE</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/overleaf.png" alt="Experience icon" class="icon email-icon">
-                        <div>
-                            <h3>LaTeX</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Languages</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets/Flag_of_Spain.svg.webp" alt="Experience icon" class="icon flag">
-                        <div>
-                            <h3>Spanish</h3>
-                            <p>Native</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/Flag_of_Catalonia.svg.png" alt="Experience icon" class="icon flag">
-                        <div>
-                            <h3>Catalan</h3>
-                            <p>Native</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/Flag_of_Morocco.svg.png" alt="Experience icon" class="icon flag">
-                        <div>
-                            <h3>Arabic</h3>
-                            <p>Native</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/Flag_of_Great_Britain_(1707–1800).svg.png" alt="Experience icon" class="icon flag">
-                        <div>
-                            <h3>English</h3>
-                            <p>Advanced C1</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/Flag_of_France.svg.webp" alt="Experience icon" class="icon flag">
-                        <div>
-                            <h3>French</h3>
-                            <p>Beginner A2</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/Flag_of_Germany.svg.webp" alt="Experience icon" class="icon flag">
-                        <div>
-                            <h3>German</h3>
-                            <p>Beginner</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
+        <div class="btn-container">
+            <button class="btn2 btn-color-2"onclick="window.open('./assets/Aerobatic_plane.pdf')">
+                Download Full Report
+            </button>
         </div>
-    </div>
+
     <img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
-    onclick="location.href='./#projects'"/>
+    onclick="location.href='./university.html#InstrumentB'"/>
    </section>
-   <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div id="experience-details-container">
-        <div class="about-containers">
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./assets/Dron.png" alt="Project 1" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Personal Projects</h2>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                See more</button>
-                <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live demo</button> -->
-            </div>
 
+   <section id="InstrumentB">
+   
+    <h1 class="title">Instrument Box Design</h1> 
+    <p class="section__text__p1">Voltic</p>
+    <div class="section-container3">
+        <div class="section__pic-container3">
+            <img src="./assets/360grados.png" 
+            alt="Profile pictute"
+            class="about-pic3">
         </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./assets/Mercedes.png" alt="Project 2" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Work Projects</h2>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github</button>
-                <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live demo</button> -->
-            </div>
 
+    </div>
+    <div class="about-details-container">
+        <div class="text-container">
+            <p>
+             I see myself as someone curious always willing to learn something new. A deep passion for space exploration drove me to study aerospace engineering. In my career, I have enjoyed acquiring a theoretical basis of how things work from a
+             more fundamental point of view, but what I have enjoyed the most is applying that
+             knowledge to build tangible objects that can solve real problems. Being capable of
+             communicating with the environment using software and hardware feels like a superpower to me and
+             it fascinates me.
+            </p>
         </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./assets/EoFC_1.png" alt="Project 3" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">University Projects</h2>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github</button>
-                <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live demo</button> -->
-            </div>
-
-        </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./assets/Bondar3.png" alt="Project 4" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Cosmic Research</h2>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github</button>
-                <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live demo</button> -->
-            </div>
-
+        <div class="btn-container">
+            <button class="btn2 btn-color-2"onclick="window.open('./assets/Aerobatic_plane.pdf')">
+                Download Full Report
+            </button>
         </div>
     </div>
-    </div>
+
+
     <img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
-    onclick="location.href='./#contact'"/>
+    onclick="location.href='./university.html#contact'"/>
    </section>
-   <section id="contact">
-    <p class="section__text__p1"> Get in touch</p>
-    <h1 class="title">Contact me</h1>
-    <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-            <p><a href="mailto:adam.elghaib@gmail.com">adam.elghaib@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-            <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-            <p><a href='https://www.linkedin.com/in/adam-el-ghaib-879b021b7/'>LinkedIn</a></p>
-        </div>
-    </div>
-   </section>
+
+
+
+
    <footer>
     <nav>
         <div class="nav-links-container">

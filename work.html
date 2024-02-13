@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam's Portfolio</title>
+    <link rel="stylesheet" href="style_work.css">
+    <link rel="stylesheet" href="mediaqueries_work.css">
+</head>
+<body onload="plotGraph()">
+   <nav id="desktop-nav">
+    <a class="b" href="index.html">  
+        <div class="logo">Adam El Ghaib</div>
+    </a>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#bertrandt">Bertrandt</a></li>
+            <li><a href="#experience">Knwoledge</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+
+   <nav id="hamburger-nav">
+    <div class="logo">Adam El Ghaib</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#bertrandt" onclick="toggleMenu()">Bertrandt</a></li>
+            <li><a href="#cimsa" onclick="toggleMenu()">Cimsa</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+   </nav>
+
+
+<section id="bertrandt">
+    <div class="section__text-1">
+        <img  src="./assets/Bertrandt_logo.svg" alt="Bertrandt_logo" class="bertrandt-logo">
+        <p class="section__text__p1">Automotive Electronics Validation Engineer</p>
+    </div>
+
+    <div class="section-container2">
+        <div class="about-details-container">
+            <div class="about-containers">
+
+                    <!-- <h3>Field Oriented Control</h3> -->
+                    <div class="section__vid-container">
+                        <!-- <video class="video1" loop onmouseover="playVideo1()" onmouseout="pauseVideo1()">
+                            <source src="./assets/TFG_Video.MOV">
+                        </video> -->
+                        <img src="./assets/arbeito_old.png" alt="old arbeito" class="arbeito">
+                     </div>
+
+
+                <!-- <div class="details-container2">
+                    <img src="./assets/image-removebg-preview.png" alt="right arrow" class="right_arrow">
+                </div> -->
+                <div class="section__vid-container2">
+                    <img src="./assets/image-removebg-preview.png" alt="right arrow" class="right_arrow">
+                </div>
+                
+
+                    <!-- <h3>Spring Elongation</h3> -->
+                   <div class="section__vid-container">
+                        <!-- <video class="video2" loop onmouseover="playVideo2()" onmouseout="pauseVideo2()">
+                            <source src="./assets/TFG_Video2.MOV">
+                        </video> -->
+                        <img src="./assets/arbeito_new.png" alt="new arbeito" class="arbeito">
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+                <div class="text-container3">
+                <p>
+                    For my final degree thesis,
+                    ways of maintaining a certain amount of force produced by a canard wing constant in front
+                    of, external perturbations in the wind speed, and angle of attack over time were explored.
+                    That is to say, reproducing a "stick-free" flight in UAV.
+                </p>
+            </div>
+            <div class="btn-container">
+                <button class="btn2 btn-color-2"onclick="window.open('./assets/Adam_ElGhaib_TGZG24.pdf')">
+                    Download Full Report
+                </button>
+            </div>
+
+    <img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
+    onclick="location.href='./work.html#cimsa'">
+</section>
+
+
+<section id="cimsa">
+    <div class="section__text">
+        <img  src="./assets/Cimsa.png" alt="Cimsa_logo" class="cimsa-logo">
+        <p class="section__text__p1">R&D Aeroespace Engineer Inernship</p>
+    </div>
+
+</script> 
+    <div class="experience-details-container">
+    <div class="text-container">At CIMSA my main task was to gather the data from over +60 graphs from the book "Parachute Recovery
+        Systems Design Manual, T.W. Knacke" to then digitalize it obtaining the functions with Excel.  The aim of this, was for the compant to have a versatile tool to offer personalized solutions to the customer and justify decistions based on experimental data. 
+    </div>
+        <div class="container">
+            <div class="chart">
+                <img src="./assets/kanacke_graph.png" alt="graph">
+            </div>
+            <div class="chart">
+                <div class="graph" id="graph"></div> 
+            </div>
+        </div>
+    <div class="text-container">
+        Moreover, I design some pieces in CAD for the manufacturing of the parachutes. And thanks to my workmates, I learned many things related with the developement, production and fuctioning of parachutes. 
+    </div>
+    </div>
+
+    <!-- <div class="tabla">
+        <table>
+            <tr>
+              <th colspan="5">Tabla con Input y JavaScript</th>
+            </tr>
+            <tr>
+              <td>Input</td>
+              <td><input id="inputNumber" placeholder="Ingrese un número" inputmode="none"></td>
+              <td><input id="inputNumber2" placeholder="Ingrese un número"></td>
+              <td><input id="inputNumber3" placeholder="Ingrese un número"></td>
+              <td><input id="inputNumber4" placeholder="Ingrese un número"></td>
+            </tr>
+            <tr id="resultados">
+              <td>Output</td>
+              <td id="resultado1">El resultado 1 es:  </td>
+              <td id="resultado2"></td>
+              <td id="resultado3"></td>
+              <td id="resultado4"></td>
+            </tr>
+          </table>
+          
+              <div class="container">
+                  <button onclick="calcular(), draw()">Calcular y Mostrar</button></td>
+              </div>
+          
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart2.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"></script> 
+
+    
+</section>
+
