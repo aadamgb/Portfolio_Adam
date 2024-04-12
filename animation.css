@@ -1,0 +1,99 @@
+/* face animations */
+
+:root{
+    /* --tl-1:url(./assets/animations/tl-1.png); */
+    --tl-1:url(./assets/animations/avatar5.svg);
+
+}
+
+/* HOVER ANIMATION */
+
+@keyframes hover{
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate{
+    /* 0% {
+        transform: rotate(0deg);
+    }
+     50%{
+        transform: rotate(180deg);
+    } 
+    100%{
+        transform: rotate(360g);
+    } */
+
+    to{transform: rotate(360deg);}
+
+}
+
+@keyframes orbit{
+    0%{
+        scale: 1;
+    }
+    25%{
+        scale: 1.25;
+    }
+    49%{z-index: 1;
+    }
+    50%{
+        left: 35rem;
+        /* top: 10rem; */
+        scale: 1;
+        z-index: -1;
+    }
+    75%{
+        scale: 1;
+    }
+    99%{z-index: -1;}
+}
+@keyframes orbit3{
+    0%{
+        z-index: 2;
+    }
+    25%{
+        z-index: 2;
+    } 
+    49%{z-index: 1;
+    }
+    50%{
+        left: 35rem;
+        /* top: 10rem; */
+        scale: 1;
+        z-index: -1;
+    }
+    75%{
+        /* scale: 0.75; */
+        z-index: -1;
+    }
+    99%{z-index: 2;}
+}
+
+@keyframes orbit2{
+    0%{
+        scale: 1;
+    }
+    25%{
+        scale: 1.25;
+    }
+    49%{z-index: 1;
+    }
+    50%{
+        left: 6.5rem;
+        /* top: 10rem; */
+        scale: 1;
+        /* z-index: -100; */
+    }
+    75%{
+        scale: 1;
+    }
+    /* 99%{z-index: -100;} */
+}

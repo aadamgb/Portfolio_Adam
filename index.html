@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="animation.js" defer></script>
+    <script src="eyes.js" defer></script>
+    <script src="project-slideshow.js" defer></script>
 </head>
 <body>
+
    <nav id="desktop-nav">
     <a class="b" href="index.html">  
         <div class="logo">Adam El Ghaib</div>
@@ -39,10 +45,25 @@
     </div>
    </nav>
 
-   <section id="profile">
-    <div class="section__pic-container">
-        <img src="./assets/1000031041-removebg.png" alt="Adam El Ghaib profile picture">
+
+   <section id="profile" class="profile-backgroung">
+    <!-- <div class="moon-container">
+        <div class="moon"></div>
     </div>
+    <div class="earth"></div>
+    <div class="mars"></div> -->
+    <div class="section__pic-container">
+        <img src="./assets/profile-pic-gradu.jpg" alt="Adam El Ghaib profile picture">
+        <!-- <div id="profile__animation">
+            <div id="profile__animation__img">
+                <div id="eyebox">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
     <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Adam El Ghaib</h1>
@@ -58,8 +79,8 @@
         <div id="socials-container">
             <img src="./assets/linkedin.png" alt="My linkedin profile"
             class="icon"onclick="location.href='https://www.linkedin.com/in/adam-el-ghaib-879b021b7/'">
-            <img src="./assets/github.png" alt="My github profile"
-            class="icon"onclick="location.href='https://github.com'">
+            <!-- <img src="./assets/github.png" alt="My github profile"
+            class="icon"onclick="location.href='https://github.com'"> -->
         </div>
     </div>
    </section>
@@ -74,6 +95,7 @@
             class="about-pic">
         </div>
         <div class="about-details-container">
+            <!-- <p class="section__text__p1">My studies</p> -->
             <div class="about-containers">
                 <div class="details-container">
                     <img src="./assets/Logo_UPC.svg.png" 
@@ -96,7 +118,7 @@
                  more fundamental point of view, but what I have enjoyed the most is applying that
                  knowledge to build tangible objects that can solve real problems. Being capable of
                  communicating with the environment using software and hardware feels like a superpower to me and
-                 it fascinates me.
+                 it is fascinating.
                 </p>
             </div>
             </div>
@@ -219,8 +241,8 @@
             </div>
             <h2 class="experience-sub-title project-title">Personal Projects</h2>
             <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github</button>
+                <button class="btn btn-color-2 project-btn" >
+                Soon</button>
                 <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
                 Live demo</button> -->
             </div>
@@ -232,8 +254,8 @@
             </div>
             <h2 class="experience-sub-title project-title">Work Projects</h2>
             <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='work.html'">
-                See more</button>
+                <button class="btn btn-color-2 project-btn">
+                Soon</button>
                 <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
                 Live demo</button> -->
             </div>
@@ -262,8 +284,8 @@
             </div>
             <h2 class="experience-sub-title project-title">Cosmic Research</h2>
             <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://cosmicresearch.org/'">
+                See more</button>
                 <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
                 Live demo</button> -->
             </div>

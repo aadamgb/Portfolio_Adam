@@ -7,6 +7,7 @@
         flex-wrap: wrap;
     }
     #contact,
+    #profile,
     #projects,
     #experience {
       height: fit-content;
@@ -15,6 +16,11 @@
 @media screen and (max-width: 1200px){
     #desktop-nav{
         display: none;
+    }
+    #contact,
+    #projects,
+    #experience {
+      height: fit-content;
     }
     #hamburger-nav{
         display: flex;
@@ -39,7 +45,7 @@
     .section__pic-container {
         width: 275px;
         height: 275px;
-        margin: 0 auto 2rem;
+        margin: 0 auto 7rem;
     }
     .about-containers {
         margin-top: 0;
@@ -52,7 +58,8 @@
     }
     #profile {
         height: 83vh;
-        margin-bottom: 0;
+        margin-bottom: 3rem;
+        height: fit-content;
     }
     article {
         font-size:  1rem;
@@ -86,6 +93,7 @@
     }
     .section__pic-container {
         width: auto;
+        margin: 5rem;
         height: 46vh;
         justify-content: center;
     }
