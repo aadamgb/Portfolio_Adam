@@ -22,15 +22,21 @@
     }
 }
 @media screen and (max-width: 1200px){
+    #profile {
+        height: 100vh;
+        margin-bottom: 10rem;
+        margin-top: 3rem;
+    }
     #desktop-nav{
         display: none;
     }
     #hamburger-nav{
         display: flex;
     }
-    #experience, 
+    #Thesis, 
     .experience-details-container {
-        margin-top: 2rem;
+        margin-top: 5rem;
+        height: fit-content;
     }
     #profile,
     .section-container {
@@ -39,19 +45,40 @@
     .arrow {
         display: none;
     }
-    section, .section-container {
+    section, .section-container2, .section-container3 {
         height: fit-content;
+        flex-direction: row;
     }
     section {
         margin: 0 5%;
     }
-    .section__pic-container {
+    .section__pic-container, .section__pic-container2 {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
+    .text-container {
+        text-align: justify;
+        height: auto;
+        width: auto;
+    }
     .about-containers {
         margin-top: 0;
+        padding-top: 5rem;
+    }
+    .section__vid-container{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        margin: auto auto;
+        
+    }
+    .section-container3{
+        display: flex;
+        justify-content: center;
+        margin: auto auto;
+        gap: 10rem;
     }
 }
 
@@ -60,8 +87,21 @@
         height: 40vh;
     }
     #profile {
-        height: 83vh;
-        margin-bottom: 0;
+        height: 100vh;
+        width: fit-content;
+        margin-bottom: 10rem;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    section, .section-container {
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+    section {
+        margin: 0 5%;
     }
     article {
         font-size:  1rem;
