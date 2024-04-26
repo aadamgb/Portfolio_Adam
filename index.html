@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
     <script src="animation.js" defer></script>
     <script src="eyes.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
     <script src="project-slideshow.js" defer></script>
 </head>
 <body>
@@ -47,25 +48,58 @@
    </nav>
 
 
-   <section id="profile" class="profile-backgroung">
+   <section id="profile" >
     <!-- <div class="moon-container">
         <div class="moon"></div>
     </div>
     <div class="earth"></div>
     <div class="mars"></div> -->
-    <div class="section__pic-container">
-        <img src="./assets/profile-pic-gradu.jpg" alt="Adam El Ghaib profile picture">
-        <!-- <div id="profile__animation">
-            <div id="profile__animation__img">
-                <div id="eyebox">
-                    <div class="eye"></div>
-                    <div class="eye"></div>
-                </div>
-            </div> -->
+    <!-- <span id="angleDisplay"></span> -->
+        <!-- <div class="section__pic-container">
+            <img src="./assets/profile-pic-gradu.png" class="prof-pic" id="prof-pic" alt="Adam El Ghaib profile picture">
+                    <div class="profile__animation">
+                            <div id="eyebox">
+                                <div class="eye"></div>
+                                <div class="eye"></div>
+                            </div>
+                    </div>
+        </div> -->
+
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic-gradu.png" class="prof-pic" id="prof-pic" alt="Adam El Ghaib profile picture">
+            <!-- <div class="section__pic-container3"> -->
+                <!-- <div id="profile__animation__img"> -->
+                    <div class="profile__animation-draw">
+                            <div class="neck"></div>
+                            <div id="eyebox">
+                                <div class="eye"></div>
+                                <div class="eye"></div>
+                            </div>
+                            <div id="eyebrows">
+                                <div class="eyebrow"></div>
+                                <div class="eyebrow"></div>
+                            </div>
+                            <div id="ears">
+                                <div class="ear"></div>
+                                <div class="ear"></div>
+                            </div>
+                            <div id="nose">
+                                <div class="nose"></div>
+                            </div>
+                            <div class="text-container-anim" style="opacity: 0;">
+                                <span id="angleDisplay" style="display: block;">0</span>
+                            </div>
+                    </div>
+
+                 <!-- </div> -->
+            <!-- </div> -->
         </div>
-    </div>
+
+        
+
 
     <div class="section__text">
+        
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Adam El Ghaib</h1>
         <p class="section__text__p2">Aerospace engineer</p>
@@ -325,5 +359,10 @@
     <p>Copyright &#169; 2024 Adam El Ghaib. All rights reserved.</p>
    </footer>
     <script src="script.js"></script>
+
+
+
+
+
 </body>
 </html>

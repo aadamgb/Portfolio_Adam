@@ -24,3 +24,8 @@ function playVideo2() {
 function pauseVideo2() {
     video2.pause();
 }
+
+// document.getElementById("prof-pic").addEventListener("click", function() {
+//     var miniAdam = document.querySelector(".profile__animation");
+//     miniAdam.style.transform = "rotate(45deg)";
+//   });

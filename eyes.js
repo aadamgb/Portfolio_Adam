@@ -12,3 +12,62 @@ function eyeball(){
         eye.style.transform = "rotate("+rotation+"deg)"
     });
 }
+
+let isTranslated = false;
+let cont = 0;
+document.getElementById("prof-pic").addEventListener("click", function() {
+const miniAdam = document.querySelector(".profile__animation-draw");
+const textDisplay = document.querySelector(".text-container-anim");
+const eyebrow = document.querySelectorAll('.eyebrow');
+const angleDisplay = document.getElementById("angleDisplay");
+
+    if (!isTranslated) {
+        cont +=1;
+        const angle = Math.random() * Math.PI * 2;
+        const x = Math.round(Math.cos(angle) * 950);
+        const y = Math.round(-Math.sin(angle) * 950);
+        const rotate = Math.round(90-angle * (180 / Math.PI));
+        // angleDisplay.textContent = `Angle: ${rotate}°`;
+
+        if(cont == 1){
+            angleDisplay.textContent = `Hi!`;
+        }else if (cont == 2){
+            angleDisplay.textContent = `Check out my CV!`;
+            textDisplay.style.fontSize = "400%";
+            textDisplay.style.transform = "translate(-115%,-500%)";
+        }else if (cont == 3){
+             eyebrow.forEach(function(eyebrow,index){
+                var eyebrowrot = (index === 0) ? -20 : +20
+                eyebrow.style.transform = "rotate("+eyebrowrot+"deg)";
+            });
+            // eyebrow.style.transform = "rotate(20deg)"
+            textDisplay.style.display = "none";
+        }else if (cont == 5){
+        eyebrow.forEach(function(eyebrow,index){
+           var eyebrowrot = (index === 0) ? 20 : -20
+           eyebrow.style.transform = "rotate("+eyebrowrot+"deg)";
+       });
+       // eyebrow.style.transform = "rotate(20deg)"
+       textDisplay.style.display = "none";
+        } else{
+            eyebrow.forEach(function(eyebrow){
+                eyebrow.style.transform = "rotate(0deg)";
+            });
+         
+         }
+        
+        setTimeout(function() {
+            textDisplay.style.transition = "all 0.5s ease-out";
+            textDisplay.style.opacity = "1";
+          }, 700);
+        // textDisplay.style.display = "block";
+        miniAdam.style.transform = "translate("+x+"px,"+y+"px) rotate("+rotate+"deg)";
+      } else {
+        miniAdam.style.transform = "translate(0, 0)";
+        // textDisplay.style.display = "none";
+        textDisplay.style.opacity = "0";
+        textDisplay.style.transition = "0s"
+      }
+
+    isTranslated = !isTranslated;
+});
