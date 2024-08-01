@@ -21,11 +21,14 @@
       height: fit-content;
     }
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1350px){
     #profile {
-        height: 100vh;
-        margin-bottom: 10rem;
+        height: 90%;
+        margin-bottom: 1rem;
         margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     #desktop-nav{
         display: none;
@@ -38,24 +41,34 @@
         margin-top: 5rem;
         height: fit-content;
     }
-    #profile,
+    /* #profile,
     .section-container {
         display: block;
-    }
+    } */
     .arrow {
         display: none;
     }
-    section, .section-container2, .section-container3 {
+    /* section, .section2, .section-container2, .section-container3 {
         height: fit-content;
         flex-direction: row;
+    } */
+     img{
+        height: 100%;
+        transform: scale(1.5);
+     }
+    .section-container{
+        display: flex;
+        flex-direction: column;
     }
     section {
         margin: 0 5%;
     }
     .section__pic-container, .section__pic-container2 {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
+        /* width: auto; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 5rem;
     }
     .text-container {
         text-align: justify;
@@ -80,18 +93,31 @@
         margin: auto auto;
         gap: 10rem;
     }
+
+    .section2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* width: 90%; */
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
     #contact, footer{
         height: 40vh;
     }
     #profile {
-        height: 100vh;
-        width: fit-content;
-        margin-bottom: 10rem;
+        height: 90%;
+        margin-bottom: 1rem;
         margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        /* background-color: chartreuse; */
+        min-width: 400px ;
+    }
+    .section2{
+        margin: 0;
     }
 
     section, .section-container {

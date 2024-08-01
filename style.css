@@ -172,6 +172,9 @@ section{
 
 .section-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
 }
 
 /* PROFILE SECTION */
@@ -342,6 +345,10 @@ section{
 
 #about{
     position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-containers{
@@ -429,13 +436,17 @@ section{
 .section-container{
     gap: 2rem;
     height: 80%;
+    width: 90%;
 }
 
 
 .section__pic-container{
+    display: flex;
+    justify-content: center;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    margin: 2rem 1rem;
+    /* background-color: aqua; */
 }
 
 /* EXPERIENCE SECTION*/
@@ -460,10 +471,12 @@ section{
 }
 
 .k {
-    gap: 1rem;
+    gap: 2rem;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     flex-direction: column; /* Update this line to set flex-direction to column */
+    /* background-color: aqua; */
 }
 /* prueba */
 /* .about-containers-know{
@@ -525,7 +538,7 @@ article .icon{
 }
 
 .project-img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .video1, .video2{

@@ -40,12 +40,12 @@
         height: fit-content;
     }
     section {
-        margin: 0 5%;
+        margin: 0 4%;
     }
     .section__pic-container, .prof-pic {
         width: 275px;
         height: 275px;
-        margin: 0 auto 7rem;
+        margin: 0 auto 1rem;
     }
     .about-containers {
         margin-top: 0;

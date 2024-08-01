@@ -162,11 +162,14 @@ section{
 .section2{
     display: flex;
     justify-content: center;
-    padding: 8vh;
+    align-items: center;
+    /* padding: 8vh; */
     margin: 2rem 12rem;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: fit-content;
     height: 90%;    
+    /* background-color: blueviolet; */
+    max-width: 100%;
 }
 
 .section3{
@@ -179,14 +182,18 @@ section{
 .section-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 0rem;
+    width: 60%;
+    max-height: 90%;
+    /* background-color: aqua; */
 }
 
-.section-container2{
+/* .section-container2{
     display: flex;
     margin: 0 auto;
     justify-content: center;
-}
+} */
 
 .section-container3{
     display: flex;
@@ -211,11 +218,21 @@ section{
 
 .section__pic-container{
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: blue; */
     height: 400px;
     width: 400px;
     margin: auto 0;
+    /* padding-top: 4rem; */
 }
 
+img{
+    /* margin-top:  8rem; */
+    padding-top: 0rem;
+    height: 100%;
+    transform: scale(1.5);
+}
 .section__pic-container2{
     display: flex;
     height: 400px;
@@ -357,6 +374,123 @@ section{
     gap: 1rem;
 }
 
+
+/* ABOUT SECTION */
+
+#about{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.about-pic2{
+    border-radius: 0rem;
+    scale: 0.75;
+    margin-top: -150px;
+}
+
+.about-pic3{
+    border-radius: 2rem;
+    scale: 0.7;
+    margin-left: -5rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    /* font-size: small; */
+}
+
+.details-container2{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    /* font-size: small; */
+}
+
+.text-container {
+    text-align: justify;
+}
+
+.text-container2 {
+    text-align: justify;
+    margin-top: 1.5rem;
+
+}
+
+.text-container3 {
+    text-align: justify;
+    margin-top: 0.25 rem;
+}
+
+
+.text-container4 {
+    text-align: justify;
+    /* width: 5rem; */
+}
+
+
+.section-container{
+    gap: 0.5rem;
+    height: 80%;
+    width: 80%;
+}
+
+
+.section__pic-container{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    margin: 2rem 1rem;
+    /* background-color: aqua; */
+}
+
+
+
+
+
+
+
+
 /* ABOUT SECTION */
 
 #Thesis{
@@ -379,14 +513,16 @@ section{
 
 
 .about-details-container{
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 
-.about-containers,
-.about-details-container{
+.about-containers{
     display: flex;
+    /* background-color: blue; */
+    width: 80%;
 }
 
 .about-pic{
@@ -436,7 +572,9 @@ section{
 
 .text-container {
     text-align: justify;
-    justify-self: center;
+    height: 90%;
+    max-height: 400px;
+    /* background-color: brown; */
 }
 
 .text-container2 {
@@ -449,7 +587,10 @@ section{
 
 .text-container3 {
     text-align: justify;
-    margin-top: 0.25 rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    /* background-color: aqua; */
 }
 
 
