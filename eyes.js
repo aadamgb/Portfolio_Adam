@@ -23,18 +23,27 @@ const angleDisplay = document.getElementById("angleDisplay");
 
     if (!isTranslated) {
         cont +=1;
-        const angle = Math.random() * Math.PI * 2;
-        const x = Math.round(Math.cos(angle) * 950);
-        const y = Math.round(-Math.sin(angle) * 950);
-        const rotate = Math.round(90-angle * (180 / Math.PI));
+        var angle = Math.random() * Math.PI * 2;
+        var x = Math.round(Math.cos(angle) * 950);
+        var y = Math.round(-Math.sin(angle) * 950);
+        var rotate = Math.round(90-angle * (180 / Math.PI));
         // angleDisplay.textContent = `Angle: ${rotate}°`;
 
         if(cont == 1){
             angleDisplay.textContent = `Hi!`;
+            angle = 0.15 * Math.PI * 2;
+            x = Math.round(Math.cos(angle) * 950);
+            y = Math.round(-Math.sin(angle) * 950);
+            rotate = Math.round(90-angle * (180 / Math.PI));
+
         }else if (cont == 2){
-            angleDisplay.textContent = `Check out my CV!`;
+            angleDisplay.textContent = `Check out my web page!`;
             textDisplay.style.fontSize = "400%";
             textDisplay.style.transform = "translate(-115%,-500%)";
+            angle = 0.45 * Math.PI * 2;
+            x = Math.round(Math.cos(angle) * 950);
+            y = Math.round(-Math.sin(angle) * 950);
+            rotate = Math.round(90-angle * (180 / Math.PI));
         }else if (cont == 3){
              eyebrow.forEach(function(eyebrow,index){
                 var eyebrowrot = (index === 0) ? -20 : +20

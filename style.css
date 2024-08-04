@@ -226,6 +226,7 @@ section{
 .section__text{
     align-self: center;
     text-align: center;
+    text-justify: distribute;
     /* background-image: url(./assets/Recurso\ 10.svg); */
     background-size: 70%;
     background-position-x: center;
@@ -979,3 +980,67 @@ footer p{
     background-size: 200% 100%;
 } */
 
+
+
+/* Recomendations */
+
+
+.recom{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* background-color: rgb(26, 68, 159); */
+    /* height: 10vh; */
+    height: 10%;
+}
+
+
+.dav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 40%;
+
+
+
+}
+
+
+
+.davlund{
+    aspect-ratio: 1;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    cursor:default;
+    border-radius: 50%;
+    
+}
+
+.dd{
+    padding: 0 1rem;
+    position: relative;
+    /* background-color: blueviolet; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 3rem;
+    margin: 2rem 1rem;
+}
+
+
+.df{
+    margin-bottom: 2rem;
+}
+
+.er{
+    display: flex;
+    align-items: center;
+}

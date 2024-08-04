@@ -50,6 +50,9 @@
     .about-containers {
         margin-top: 0;
     }
+    .profile__animation-draw{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -107,4 +110,29 @@
         text-align: justify;
     }
     
+}
+
+
+@media screen and (max-width: 850px) {
+
+    #rec{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .dd{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 1rem 0rem;
+        padding: 0;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
 }
