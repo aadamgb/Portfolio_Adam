@@ -24,6 +24,7 @@
     }
     #hamburger-nav{
         display: flex;
+        z-index: 100;
     }
     #experience, 
     .experience-details-container {
