@@ -398,6 +398,7 @@ section{
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    
     /* font-size: small; */
 }
 
@@ -529,6 +530,9 @@ article .icon{
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb( 255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-img{
